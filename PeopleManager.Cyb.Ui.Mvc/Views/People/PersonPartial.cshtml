@@ -1,0 +1,12 @@
+﻿@model Person
+
+<tr>
+    <td>@Model.FirstName</td>
+    <td>@Model.LastName</td>
+    <td>@Model.Email</td>
+    <td>
+        <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model.Id">
+            Edit
+        </a>
+    </td>
+</tr>
